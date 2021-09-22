@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 .image{
-  height:734px;
+  height:700px;
+  display: block;
+}
+
+.control-dots{
+  position: absolute;
+	top: 0;
+	left: 0;
+	width: 30px;
+  display: inline-block;
+  flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
 }
 
 .h1{

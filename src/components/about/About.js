@@ -6,14 +6,13 @@ import "animate.css/animate.min.css";
 class About extends Component {
     render() {
         return (
-            <div className={classes.box} id="about">
-                <ScrollAnimation offset="0" animateIn="fadeInLeft" duration='2.4' animateOnce="true" initiallyVisible ={true}>
-                    <span  className={classes.head}>ABOUT ME 123</span>
-                    <h2 className={classes.heading}>Who Am I?</h2>
+            <div className={classes.box} id="about"> 
+                <ScrollAnimation offset="0" animateIn="fadeIn" duration='2.4' animateOnce="true" initiallyVisible ={true}>
+                    <span  className={classes.head}> Rolling stack ride - A historical display</span>
+                    <h2 className={classes.heading}>where you can ．hear．smell．feel． the power of the locomotive</h2>
                     <div className={classes.About}>
-                        <p> My name is SACHIN MITTAL and I am currently pursuing my degree in Bachelor of Technology in Computer Science and Engineering from Sant Longowal Institute of Engineering and Technology. I want to be a developer as I am interested in developing new things which excite me a lot. :)  </p>
-                         <p className={classes.br}>I love exploring new technologies and being a practitioner, I like to stay on top of latest trends.
- </p>
+                        <p>Enjoy the sounds, smoke and vibrations of a powerful steam locomotive along with the untouched beauty of the Kuma River.</p>
+                         <p className={classes.br}> Start a journey through the beautiful origin landscapes of Kyushu.</p>
                     </div>
                 </ScrollAnimation>
             </div>

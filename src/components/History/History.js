@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
-import classes from './Education.module.css';
+import classes from './History.module.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 //import "animate.css/animate.min.css";
-import { MdSchool } from 'react-icons/md';
-import { MdWork } from 'react-icons/md';
-import { FaSchool } from 'react-icons/fa';
+import { GiJapan } from 'react-icons/gi';
+import { GiCoalWagon } from 'react-icons/gi';
+import { WiTrain } from 'react-icons/wi';
 
-class Education extends Component {
-    render() {
-        return (
-                <div className={classes.box} id="education">
+
+class History extends Component {
+
+        render() {
+            return (<div className={classes.box} id="history">
                     <ScrollAnimation offset="0" animateIn="fadeInLeft" duration='2' animateOnce="true" initiallyVisible ={true}>
-                     <span  className={classes.head}>MY JOURNEY</span>
+                     <span  className={classes.head}>HISORY</span>
                     <section className={classes.container}>
                         <div className={classes.container_content}>
                             <div className={classes.row}>
@@ -20,33 +21,33 @@ class Education extends Component {
                                         <ScrollAnimation offset="0" animateIn="fadeInLeft" duration='2.4' animateOnce="true" initiallyVisible ={true}>
                                             <article className={classes.timeline_entry}>
                                                 <div className={`${classes.timeline_icon} ${classes.timeline_icon_2}`} >
-                                                    <FaSchool />     
+                                                    <GiJapan />     
                                                 </div>
                                                 <div className={classes.label}>
-                                                <h2 >Higher Education  <span>2014-2016</span></h2>
-                                                <p>I have completed my higher education from HKIS with major subjects as Physics,Chemistry & Maths with 85 merit in CBSE board. </p>
+                                                <h2>New Class of 8620 <span>1914 ¬ 1929</span></h2>
+                                                <p>As a new type of 2-6-0 steam locomotive built in Japan, a total of 672 Class 8620 locomotives were built</p>
                                                 </div>
                                             </article>
                                         </ScrollAnimation>
-                                       <ScrollAnimation offset="0" animateIn="fadeInLeft" duration='2.4' animateOnce="true" initiallyVisible ={true}>
+                                       <ScrollAnimation offset="0" animateIn="fadeInLeft" duration='2.9' animateOnce="true" initiallyVisible ={true}>
                                             <article className={classes.timeline_entry}>
                                                 <div className={classes.timeline_icon} >
-                                                <MdSchool />
+                                                <GiCoalWagon />
                                                 </div>
                                                 <div className={classes.label}>
-                                                <h2 >Undergraduation at SLIET <span>2017-Present</span></h2>
-                                                <p>I'm currently completing my undergraduation in CSE (Computer Science and Engineering) from <a href='http://sliet.ac.in/'>SLIET</a>. </p>
+                                                <h2 >National Railway on Hisatsu Line <span>1930 ¬ 1980</span></h2>
+                                                <p>Serviced as passenger cars along with KiHa 40 series DMU, KiHa 200 series DMU and  JNR 50 series</p>
                                                 </div>
                                             </article>
                                         </ScrollAnimation>
-                                        <ScrollAnimation offset="0" animateIn="fadeInLeft" duration='2.4' animateOnce="true" initiallyVisible ={true}>
+                                        <ScrollAnimation offset="0" animateIn="fadeInLeft" duration='3.4' animateOnce="true" initiallyVisible ={true}>
                                             <article>
                                                 <div className={`${classes.timeline_icon} ${classes.timeline_icon_4}`} >
-                                                    <MdWork />     
+                                                    <WiTrain />     
                                                 </div>
                                                 <div className={classes.label}>
-                                                <h2 >Internship</h2>
-                                                <p>Completed one month Internship in React Js with Internity Foundation</p>
+                                                <h2 >SL Hitoyoshi <span>2005 ¬ Now</span></h2> 
+                                                <p>Preserved in working order as an excursion train at Kumamoto Depot in Kumamoto city centre.</p>
                                                 </div>
                                                 <div className={classes.timeline_entry_inner}><div  className={classes.timeline_icon_3||classes.color_none}></div></div>
                                             </article>
@@ -58,9 +59,7 @@ class Education extends Component {
                     </section>
                     </ScrollAnimation>
                 </div>
-     
-        )
-    }
+        )}
 }
 
-export default Education;
+export default History;

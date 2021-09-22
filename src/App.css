@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 .App {
-  height:710px;
+  height:500px;
   display:grid;
   grid-template-columns: 1fr 4fr;
   font-family: 'Quicksand',Arial, sans-serif;
@@ -18,6 +18,21 @@ width:300px;
 p{
   color: rgba(0, 0, 0, 0.7);
  font-weight: normal;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 6px;
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  border-radius: 100px;
+  background-clip: padding-box;
+  -webkit-border-radius: 7px;
+  -webkit-box-shadow: inset -1px -1px 4px rgba(9, 18, 75, 0.904),
+    inset 2px 3px 1px #71f7c386;
 }
 
 

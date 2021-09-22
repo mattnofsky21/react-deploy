@@ -2,20 +2,19 @@ import React, { Component } from 'react';
 import './Sidebar.css';
 import { HashLink as Link } from 'react-router-hash-link';
 import {  FiExternalLink } from 'react-icons/fi';
-import logo from '../images/My-logo4.ico'
 
 class Sidebar extends Component {
     render() {
        
         return (
             <div className="sidebar">
-                <img src={logo} />
-                <h1><Link smooth to="/#start" className="h1_links">Sachin Mittal</Link></h1>
-                <p style={{color:'black',fontWeight:'bold'}} className="gmail"> mittalsam98@gmail.com </p>
+                <img className="sidebar-logo" src="../images/logo3.jpg"/>
+                <h1><Link smooth to="/#start" className="h1_links">SL Hitoyoshi</Link></h1>
+                <p style={{color:'black',fontWeight:'bold'}} className="gmail">nostalgic steam locomotive</p>
                 <ul className="sidebar-nav">
-                    <li className="sidebar-nav-items"><Link smooth to="/#about" className="links">About</Link></li>
-                    <li className="sidebar-nav-items"><Link smooth to="/#education" className="links" >Education</Link></li>
-                    <li className="sidebar-nav-items"><Link smooth to="/#interest" className="links">Interest</Link></li>
+                    <li className="sidebar-nav-items"><Link smooth to="/#about" className="links">Story</Link></li>
+                    <li className="sidebar-nav-items"><Link smooth to="/#history" className="links" >History</Link></li>
+                    <li className="sidebar-nav-items"><Link smooth to="/#interest" className="links">Detail</Link></li>
                     {/* <li className="sidebar-nav-items"><a href="http://www.bloggingpeek.com" target="_blank" rel="opener noreferrer" className="links"> Blog<FiExternalLink/></a></li> */}
                 </ul>
     
@@ -27,6 +26,7 @@ class Sidebar extends Component {
                         <li className="sidebar-nav-icons"> <a href="https://www.instagram.com/decent_sachin.mittal/" rel="opener noreferrer" target="_blank" class="fa fas fa-instagram fa-lg"></a></li>
                         <li className="sidebar-nav-icons"> <a href="mailto:mittalsam98@gmail.com" rel="opener noreferrer" target="_blank" class="fa fas fa-envelope fa-lg"></a></li>
                         <li className="sidebar-nav-icons"> <a href="https://www.facebook.com/profile.php?id=100011989067867" rel="opener noreferrer" target="_blank" class="fa fas fa-facebook fa-lg"></a></li>
+                        <li className="sidebar-nav-icons"> <a href="" rel="" target="" class=""></a></li>
                     </ul>
                 </div>
               
