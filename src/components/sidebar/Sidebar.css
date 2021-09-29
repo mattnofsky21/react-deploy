@@ -21,6 +21,15 @@
   color:#000;
   font-size:32px;
 }
+
+.h1_links:hover {
+  background-color: #f8f8f8;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 2px solid #80a8ff;
+  color: rgb(5, 7, 99);
+}
+
 .sidebar > p {
     margin-top: 30px;
     text-align: center;
@@ -62,6 +71,55 @@
   color:red;
 }
 
+button {
+	-webkit-transition-duration: 0.1s; /* Safari */
+	transition-duration: 0.1s;
+	background-color: #ffeaea;
+	border-radius: 8px;
+	border-bottom: 4px solid #C24648;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-family: 'Oxygen', sans-serif;
+	letter-spacing: 2px;
+	cursor: pointer;
+  display:absolute;
+  margin-bottom: 15px;
+}
+
+button:hover {
+  background-color: #ffe89d;
+  border: none;
+  border-radius: 8px;
+  border-bottom: 4px solid #C24648;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+  letter-spacing: 2px;
+}
+
+button:active {
+  background-color: #fa9e47;
+  border: none;
+  border-radius: 8px;
+  border-bottom: 4px solid #C24648;
+  color: #CCC;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+  letter-spacing: 2px;
+}
+
 .links:hover{
  /* color:rgb(121, 189, 252); */
  color:rgb(121, 189, 252);
@@ -99,14 +157,6 @@
   .links{
 display:none;
   }
-  .fas{
-    transform: scale(1.3);
-    margin:5px 0px;
-  }
- .gmail{
-   font-size:16px;  
-   font-weight: normal;
- }
 }
  
 @media (max-width:370px){
@@ -119,9 +169,4 @@ display:none;
   .links{
     font-size: 16px;
   }
-  .fas{
-    transform: scale(1.1);
-    margin:5px 0px;
-  }
-
 }

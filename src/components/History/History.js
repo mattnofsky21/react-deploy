@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
 import classes from './History.module.css';
 import ScrollAnimation from 'react-animate-on-scroll';
-//import "animate.css/animate.min.css";
 import { GiJapan } from 'react-icons/gi';
 import { GiCoalWagon } from 'react-icons/gi';
 import { WiTrain } from 'react-icons/wi';
 
-
 class History extends Component {
-
         render() {
             return (<div className={classes.box} id="history">
                     <ScrollAnimation offset="0" animateIn="fadeInLeft" duration='2' animateOnce="true" initiallyVisible ={true}>
-                     <span  className={classes.head}>HISORY</span>
+                 <span  className={classes.head}>HISORY</span>
                     <section className={classes.container}>
                         <div className={classes.container_content}>
                             <div className={classes.row}>
